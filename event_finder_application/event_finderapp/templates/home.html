@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Upcoming Events</h1>
+  {% if events %}
+    <ul>
+      {% for event in events %}
+        <li>{{ event.title }} - {{ event.start_time|date:"F j, Y" }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No events found.</p>
+  {% endif %}
+{% endblock %}

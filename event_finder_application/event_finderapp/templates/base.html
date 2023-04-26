@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Event Application</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="{% url 'create_account' %}">Create Account</a></li>
+    </ul>
+  </nav>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>
