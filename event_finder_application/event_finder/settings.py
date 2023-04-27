@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'event_finder.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '4y02LkTL9YBiQuSHbMrm',
+        'HOST':'containers-us-west-19.railway.app',
+        'PORT':'6381',
     }
 }
 
