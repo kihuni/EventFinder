@@ -1,0 +1,4 @@
+virtualenv
+gitignore
+postgresql
+python-dotenv
