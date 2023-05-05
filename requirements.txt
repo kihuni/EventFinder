@@ -1,4 +1,5 @@
 virtualenv
 gitignore
-postgresql
 python-dotenv
+django
+psycopg2-binary
